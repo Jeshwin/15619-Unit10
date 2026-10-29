@@ -1,0 +1,22 @@
+{
+    "topics": [
+        {
+            "topic_name": "driver-locations",
+            "partition_count": 20,
+            "replication_factor": 2,
+            "justification": "1681151 DRIVER_LOCATION events => 10,000 EPS => 10,000/500 = 20 partitions"
+        },
+        {
+            "topic_name": "events",
+            "partition_count": 27,
+            "replication_factor": 2,
+            "justification": "2263720 events => (2263720/1681151) * 10,000 = 13465 EPS => 13465/500 = 27 partitions"
+        },
+        {
+            "topic_name": "payments",
+            "partition_count": 13,
+            "replication_factor": 3,
+            "justification": "1055129 events => (1055129/1681151) * 10,000 = 6276 EPS => 6276/500 = 13 partitions. Payments should have no data loss, so we use the highest replication factor available. "
+        }
+    ]
+}
