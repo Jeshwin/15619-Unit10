@@ -1,2 +1,9 @@
 {"blockId":5648,"type":"ENTERING_BLOCK"}
 {"blockId":5649,"type":"DRIVER_LOCATION"}
+{"blockId":1930,"clientId":6343,"type":"RIDE_REQUEST"}
+{"blockId":42,"type":"PAYMENT_INITIATED"}
+{"blockId":5649,"driverId":2,"type":"DRIVER_LOCATION"}
+{"blockId":5669,"type":"DRIVER_LOCATION"}
+{"blockId":5675,"type":"RIDE_COMPLETE"}
+{"blockId":43,"type":"PAYMENT_CONFIRMED"}
+{"blockId":5648,"type":"LEAVING_BLOCK"}
